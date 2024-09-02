@@ -1,0 +1,39 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-23 18:44:35.635418",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "subject",
+  "estimate"
+ ],
+ "fields": [
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Subject"
+  },
+  {
+   "depends_on": "eval Doc.subject",
+   "fieldname": "estimate",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Estimate",
+   "options": "Excllent\nVery good\nGood\nAccebtable\nFaild",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-30 15:18:13.583907",
+ "modified_by": "Administrator",
+ "module": "school",
+ "name": "Subject",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
